@@ -1,0 +1,222 @@
+/*---------- 8 Puzzle Settings ----------*/
+body {
+    background: linear-gradient(to right, #385cc5, #e93636);
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(#e66465, #9198e5);
+    margin: 10px auto;
+}
+
+#container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #000;
+}
+
+#container ul li {
+    background: linear-gradient(to bottom, #ffcc66 0%, #ff0066 100%);
+    width: 150px;
+    height: 150px;
+    border: 1px solid #385cc5;
+    margin-top: 12px;
+    padding-top: 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#container .empty {
+    background: linear-gradient(to bottom, #66ffff 0%, #6600ff 100%);
+    border: 2px solid #e66465;
+}
+
+h1 {
+    color: #E4FDE1;
+}
+
+/*---------- 8 Puzzle Modal Settings ----------*/
+#modal {
+    width: 48%;
+    height: 300px;
+    background: linear-gradient(to bottom, #cc0099 0%, #00ffcc 100%);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#modal #header {
+    text-align: right;
+    padding: 5px 10px;
+}
+
+#modal #header button {
+    padding: 10px;
+    border: none;
+    background: #456990;
+    color: #e66465;
+    cursor: pointer;
+}
+
+#modal #message {
+    color: #FDE1E3;
+    margin: 0;
+    font-size: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+/*---------- Clock Timer Settings ----------*/
+* {
+    --rotation: 0;
+}
+
+.center {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-digit {
+    margin: 60px auto;
+}
+
+.digit-hr, .digit-min, .digit-seg, .digit-sep {
+    color: #fff;
+    font-size: 40px;
+}
+
+.digit-sep {
+    line-height: 0.8;
+}
+
+.clock {
+    position: relative;
+    top: 50px;
+    height: 200px;
+    width: 200px;
+    background: white;
+    border: 10px solid #000;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.center-clock {
+    background-color: #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 86px;
+    left: 80px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hours, .minutes, .seconds {
+    --rotation: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    transform: rotate(calc(var(--rotation)* 1deg));
+}
+
+.hr, .min, .seg {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: auto;
+    background: #000;
+}
+
+.hr {
+    margin-top: 15px;
+    width: 10px;
+    height: 50%;
+}
+
+.min {
+    margin-top: 5px;
+    width: 10px;
+    width: 50%;
+}
+
+.seg {
+    margin-top: 15px;
+    width: 5px;
+    height: 50%;
+    background: red;
+}
+
+.indicators {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    --rotation: 0;
+    transform: rotate(var(--rotation));
+}
+
+.indicator {
+    position: absolute;
+    width: 3px;
+    height: 10px;
+    left: 50%;
+    background-color: #000;
+}
+
+#indi1 {
+    --rotation:30deg;
+}
+
+#indi2 {
+    --rotation:60deg;
+}
+
+#indi3 {
+    --rotation:90deg;
+}
+
+#indi4 {
+    --rotation:120deg;
+}
+
+#indi5 {
+    --rotation:150deg;
+}
+
+#indi6 {
+    --rotation:180deg;
+}
+
+#indi8 {
+    --rotation:30deg;
+}
+
+#indi9 {
+    --rotation:270deg;
+}
+
+#indi10 {
+    --rotation:300deg;
+}
+
+#indi11 {
+    --rotation:330deg;
+}
+
+#indi12 {
+    --rotation:570deg;
+}
+
+#indi13 {
+    --rotation:600deg;
+}

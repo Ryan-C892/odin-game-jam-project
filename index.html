@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Odin Game Jam Project</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Custom SASS -->
+        <link rel="stylesheet" href="grid-based-framework/css/style.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body onload="setUp();">
+    <div class="grid12 wrapper">
+        <div class="row">
+            <!-- Sliding Tile Puzzle -->
+                <h1 class="grid12 left-offset2">Sliding Tile Puzzle</h1>
+                <div id="modal" class="hide">
+                    <div id="header"><button id="closeBtn" onclick="hideModal()">X</button></div>
+                    <h1 id="message">Winner!</h1>
+                </div>
+                    <div id="container">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li></li>
+                        </ul>
+                    </div>
+            <!-- Clock Timer -->
+            <div class="grid6" id="clock-container">
+                <div class="clock">
+                    <div class="center-clock"></div>
+                    <div class="hours" data-hour-hand>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="minutes" data-minute-hand>
+                        <div class="min"></div>
+                    </div>
+                    <div class="seconds" data-second-hand>
+                        <div class="seg"></div>
+                    </div>
+
+                    <div class="indicators">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi1">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi2">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi3">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi4">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi5">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi6">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi7">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi8">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi9">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi10">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi11">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi12">
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="indicators" id="indi13">
+                        <div class="indicator"></div>
+                    </div>
+                </div>
+                <!-- Timer Countdown -->
+                <div class="grid3 center">
+                    <div class="cont-digit">
+                    <div class="row">
+                    <p class="digit-hr"><b data-hour-dig>00</b></p>
+                    <p class="digit-sep">:</p>
+                    <p class="digit-min"><b data-minute-dig>00</b></p>
+                    <p class="digit-sep">:</p>
+                    <p class="digit-seg"><b data-second-dig>00</b></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script src="js/script.js"></script>
+</html>
